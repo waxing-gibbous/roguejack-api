@@ -1,0 +1,8 @@
+name = "roguejack-api"
+main = "src/index.ts"
+compatibility_date = "2026-02-26"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "roguejack-scores"
+database_id = "placeholder-create-later"
