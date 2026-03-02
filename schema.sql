@@ -17,6 +17,7 @@ CREATE TABLE IF NOT EXISTS runs (
 
 CREATE INDEX IF NOT EXISTS idx_runs_peak ON runs(peak_bankroll DESC);
 CREATE INDEX IF NOT EXISTS idx_runs_submitted ON runs(submitted_at DESC);
+CREATE INDEX IF NOT EXISTS idx_runs_submitted_peak ON runs(submitted_at, peak_bankroll DESC);
 
 CREATE TABLE IF NOT EXISTS rate_limits (
   ip TEXT PRIMARY KEY,
